@@ -41,7 +41,7 @@ public class Funcionario {
     public static void reajusteSalario(Funcionario funcionarioTeste, BigDecimal valorReajuste) {
         if(funcionarioTeste instanceof Funcionario) {
             funcionarioTeste.salario = funcionarioTeste.salario.add(valorReajuste);
-            System.out.println("O novo valor do salário do funcionário é de R$ "+ funcionarioTeste.salario);
+            System.out.println("O novo valor do salário do funcionário "+funcionarioTeste.nome+" é de R$ "+ funcionarioTeste.salario);
         }
         else{
             System.out.println("Funcionario terceirizado não pode ter reajuste!");
